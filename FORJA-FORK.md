@@ -1,8 +1,8 @@
-# Fork do Brasa — `brasa/team`
+# Fork da Forja — `forja`
 
-Este é um fork de `tangency-labs/solidcore` mantido pelo projeto **Brasa**
-(`dionarley/brasa-pdm`). O `solidcore` é o kernel B-rep do serviço: lê STEP,
-tessela e mede os corpos. A branch `brasa/team` carrega as mudanças locais,
+Este é um fork de `tangency-labs/solidcore` mantido pela plataforma **Forja**
+(`dionarley/forja`). O `solidcore` é o kernel B-rep do serviço: lê STEP,
+tessela e mede os corpos. A branch `forja` carrega as mudanças locais,
 sem PR na origem (o upstream do kernel é `tangency-labs/solidcraft`, branch
 `kernel`).
 
@@ -17,9 +17,9 @@ Nada é publicado no crates.io.
 ```sh
 git remote add upstream https://github.com/tangency-labs/solidcore.git   # uma vez
 git fetch upstream
-git checkout brasa/team
+git checkout forja
 git rebase upstream/main
-git push --force-with-lease origin brasa/team
+git push --force-with-lease origin forja
 ```
 
 O clone é raso (`--depth 1`) e usa sparse-checkout para não baixar os goldens
